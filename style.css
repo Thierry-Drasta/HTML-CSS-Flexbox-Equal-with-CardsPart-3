@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #efefef;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card{
+    flex: 1 1 2rem;
+    flex-wrap: wrap;
+    display: flex;
+
+    /* foe align buttons display flex to child and set ditection to column*/
+    flex-direction: column;
+
+    align-items: center;
+    margin: 10px 20px;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    
+    /* Leave spaces arounds*/
+    padding: 10px 20px;
+
+    /* Equal width align-self: normal; to child;*/
+    /* make all cards be eqaul sized.*/
+    align-self: normal;
+}
+
+.card img{
+    max-width: 200px;
+}
+
+.card h4{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.card p{
+    /* Leave space between paragraphs*/
+    margin-bottom: 10px;
+}
+
+.card .btn{
+    display: inline-block;
+
+    /* Set buttons to margin-top: auto*/
+    margin-top: auto;
+    
+    background: green;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
